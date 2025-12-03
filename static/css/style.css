@@ -1,0 +1,103 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat container */
+.chat-container {
+    background-color: #fff;
+    width: 400px;
+    max-width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.chat-container h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Messages container */
+.messages {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    height: 300px;
+    background-color: #f9f9f9;
+}
+
+/* Individual messages */
+.user {
+    text-align: right;
+    margin: 5px 0;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.model {
+    text-align: left;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Input container */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+}
+
+/* Send button */
+#send-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #1a73e8;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#send-btn:hover {
+    background-color: #155ab6;
+}
+
+/* Reset button */
+.reset-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #e53935;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.reset-btn:hover {
+    background-color: #b71c1c;
+}
